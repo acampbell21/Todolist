@@ -1,0 +1,14 @@
+<h1> Create New Todo List Item </h1>
+
+<%= form_for @page do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title, placeholder: 'Title', required: true %>
+
+  <%= f.label :author %>
+  <%= f.text_field :author, placeholder: 'Author', required: true %>
+
+  <%= f.label :body %>
+  <%= f.text_area :body, placeholder: 'Todo', required: true %>
+
+  <%= f.submit %>
+<% end %>
